@@ -1,0 +1,25 @@
+{
+    "type": "object",
+    "properties": {
+        "client_id": {
+            "type": "string",
+            "title": "Client ID",
+            "description": "Meta App Client ID – ukládá se do token_meta_ads.csv"
+        },
+        "client_secret": {
+            "type": "string",
+            "title": "Client Secret",
+            "description": "Meta App Client Secret – ukládá se do token_meta_ads.csv"
+        },
+        "fb_exchange_token": {
+            "type": "string",
+            "title": "Short-lived Access Token",
+            "description": "Vstupní Facebook token – použitý pouze při prvním běhu."
+        }
+    },
+    "required": [
+        "client_id",
+        "client_secret",
+        "fb_exchange_token"
+    ]
+}
